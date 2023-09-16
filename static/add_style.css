@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form {
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; 
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; 
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #449efe; 
+}
+
+textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #449efe;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.home-button {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 120px; 
+    padding: 8px; 
+    margin-top: 20px;
+    background-color: #449efe;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

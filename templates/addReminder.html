@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/add_style.css" type="text/css">
+    <title>Web Reminder</title>
+</head>
+<body>
+    <form action="/showReminder" method="post">
+        <h1>Web Reminder</h1>
+
+        <label for="name">Title:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" required></textarea>
+
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority" required>
+            {% for value in range(1, 11) %}
+                <option value="{{ value }}">{{ value }}</option>
+            {% endfor %}
+        </select>
+
+        <input type="submit" value="Save Reminder">
+    </form>
+    <a class="home-button" href="/">Home</a>
+</body>
+</html>
